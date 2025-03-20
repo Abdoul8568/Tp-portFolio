@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PortFolio - Abdoul Wahabou</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    </head>
+
+    <body>
+        <div class="navbar" id="scroll-menu">
+            <div class="title">Abdoul wahabou</div>
+                <div class="right" id="myTopnav" class="items-menu">
+                    <a href="#">Home</a>
+                    <a href="#">Works</a>
+                    <a href="#">Skills</a>
+                </div>
+                <a href="javascript:void(0);" class="icon-hamburger" onclick="myFunction()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <div class="presentation">
+                <img src="./images/Mon image.jpg" alt="">
+                <div class="right">
+                    <h2>Hi, I'm Abdoul Wahabou</h2>
+                    <h3>Développeur Front-end</h3>
+                    <p class="description">I'm a passionate web developer with over 5 years of experience in creating responsive and user-friendly websites. I specialize in fullstack development, particularly using Ruby on Rails to build robust, scalable web applications. I also have expertise in front-end technologies like HTML, CSS, and JavaScript, allowing me to create seamless and dynamic user experiences. </p>
+                    <div class="btns">
+                        <a href="#">Contact Me</a>
+                        <a href="#">Linkdin</a>
+                        <a href="#">CV</a>
+                    </div>
+                </div>
+            </div>
+            <div class="competences">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div class="skill">
+                        <div class="imgs">
+                            <img src="./images/HTML.jpeg" alt="">
+                            <img src="./images/CSS.jpeg" alt="" class="top">
+                        </div>
+                        <div class="bottom">
+                            <h3>HTML/CSS</h3>
+                            <p>Proficient in creating semantic, accessible HTML and CSS, with a strong emphasis on writing clean, maintainable, and well-structured code.</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="imgs">
+                            <img src="./images/rails.jpeg" alt="">
+                        </div>
+                        <div class="bottom">
+                            <h3>Ruby on Rails</h3>
+                            <p>Experienced in using Ruby on Rails to build robust, scalable web applications with a focus on convention over configuration.</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="imgs">
+                            <img src="./images/vuejs.jpeg" alt="">
+                        </div>
+                        <div class="bottom">
+                            <h3>Vue.js</h3>
+                            <p>Proficient in developing dynamic, single-page applications using Vue.js, with a focus on modularity and performance.</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="imgs">
+                        <img src="./images/javaScript.png" alt="">
+                    </div>
+                    <div class="bottom">
+                        <h3>JavaScript</h3>
+                        <p>Proficient in using vanilla JavaScript and popular frameworks and libraries to create interactive and dynamic web applications.</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="imgs">
+                        <img src="./images/tailwindcss.jpeg" alt="">
+                    </div>
+                    <div class="bottom">
+                        <h3>Tailwind CSS</h3>
+                        <p>Skilled in using Tailwind CSS to create fast and responsive web interfaces, with a focus on utility classes and design consistency..</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="imgs">
+                        <img src="./images/php.jpeg" alt="">
+                    </div>
+                    <div class="bottom">
+                        <h3>PHP</h3>
+                        <p>Experienced in using PHP to develop server-side logic, dynamic web pages, and interact with databases..</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="imgs">
+                        <img src="./images/nodejs.jpeg" alt="">
+                    </div>
+                    <div class="bottom">
+                        <h3>Node.js</h3>
+                        <p>Skilled in using Node.js for building scalable network applications, server-side scripting, and developing backend services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="./images/image 1.jpeg" alt="Image 1" class="gallery-img" onclick="openLightbox(this)">
+                <img src="./images/image 2.jpeg" alt="Image 2" class="gallery-img" onclick="openLightbox(this)">
+                <img src="./images/image 3.jpeg" alt="Image 3" class="gallery-img" onclick="openLightbox(this)">
+                <img src="./images/image 4.jpeg" alt="Image 4" class="gallery-img" onclick="openLightbox(this)">
+                <img src="./images/image 5.jpeg" alt="Image 3" class="gallery-img" onclick="openLightbox(this)">
+                <img src="./images/image 6.jpeg" alt="Image 4" class="gallery-img" onclick="openLightbox(this)">
+            </div>
+        </div>
+
+        <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
+
+        <div class="pricing-section">
+            <h2>Pricing</h2>
+            <label class="switch">
+                <input type="checkbox" id="pricing-toggle">
+                <span class="slider round"></span>
+            </label>
+            <div class="cards">
+                <div class="card">
+                    <h3>Basic</h3>
+                    <p class="price" data-monthly="10" data-yearly="100">$10/mo</p>
+                </div>
+                <div class="card">
+                    <h3>Pro</h3>
+                    <p class="price" data-monthly="20" data-yearly="200">$20/mo</p>
+                </div>
+                <div class="card">
+                    <h3>Premium</h3>
+                    <p class="price" data-monthly="30" data-yearly="300">$30/mo</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="works competences">
+            <div class="title">
+                <h1>My Works</h1>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="img-work" src="./images/calculatrice.jpeg" alt="Calculatrice">
+                        <div class="bottom">
+                            <h3>Calculatrice</h3>
+                            <p>A mini calculator performing basic mathematical operations: addition, subtraction, division, multiplication.</p>
+                            <button class="view">View Project</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="img-work" src="./images/drawbox.jpeg" alt="Drawbox">
+                        <div class="bottom">
+                            <h3>DRAWBOXES</h3>
+                            <p>Game consisting of drawing by placing boxes, similar to object pixelation.</p>
+                            <button class="view">View Project</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="img-work" src="./images/randomColor.jpeg" alt="Random Color">
+                        <div class="bottom">
+                            <h3>RANDOM COLOR</h3>
+                            <p>Displays a CSS color randomly.</p>
+                            <button class="view">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="contact competences">
+            <h2>Contact Me</h2>
+            <p>Have a question or want to work together? Feel free to get in touch.</p>
+                <form action="post">
+                    <div class="input">
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="input">
+                    <label for="nammessagee">Message</label>
+                    <input type="text" id="message">
+                </div>
+                <button class="view">Envoyer</button>
+            </form>
+        </div>
+
+        <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('sticky', window.scrollY > 0);
+            navbar.style.backgroundColor = window.scrollY > 200 ? '#333' : 'transparent';
+        });
+         </script>
+
+        <!-- ✅ Fonction pour gérer l'affichage du menu hamburger -->
+        <script>
+            function toggleMenu() {
+                const nav = document.getElementById('myTopnav');
+                nav.classList.toggle('active');
+            }
+        </script>
+
+        <!-- ✅ Initialisation de Swiper -->
+        <script>
+            new Swiper('.mySwiper', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: { el: '.swiper-pagination', clickable: true }
+            });
+        </script>
+
+        <!-- ✅ Lightbox JavaScript -->
+        <script>
+            function openLightbox(img) {
+                document.getElementById('lightbox').style.display = 'block';
+                document.getElementById('lightbox-img').src = img.src;
+            }
+
+            function closeLightbox() {
+                document.getElementById('lightbox').style.display = 'none';
+            }
+        </script>
+
+        <!-- ✅ Toggle Pricing Cards -->
+        <script>
+            document.getElementById('pricing-toggle').addEventListener('change', function() {
+                const prices = document.querySelectorAll('.price');
+                prices.forEach(price => {
+                    if (this.checked) {
+                        price.textContent = `$${price.dataset.yearly}/yr`;
+                    } else {
+                        price.textContent = `$${price.dataset.monthly}/mo`;
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
